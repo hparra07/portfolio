@@ -1,0 +1,417 @@
+/* RESET*/
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+pre,
+code,
+address,
+form,
+fieldset,
+blockquote {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+/*fin del reset css*/
+
+.body{
+    background-color: rgba(0, 0, 0, 0.856); 
+    height: 100vh;
+    margin: auto; 
+    font-family: "Mada", sans-serif;
+}
+
+.header{ 
+    text-align:center;
+}
+.menu{ 
+    width:100%; 
+    background-color:rgba(0, 0, 0, 0.9); 
+    color:white; 
+    text-align:center
+}
+.wrapper{  
+    width:100%; 
+}
+ 
+.fixed{
+    position:fixed; 
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+nav{
+    background-color: black;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+section ul li a{
+    color: gray;
+    list-style: none;
+    text-decoration: none;
+}
+
+section ul li a:hover{
+    color: pink; 
+}
+
+.navLink{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navLink:hover{
+    color: pink;
+}
+
+p{
+    color: white;
+}
+
+.list{
+    list-style: none;
+    color: pink;
+}
+li{
+    color: pink;
+}
+
+ol{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: pink;
+}
+
+h2, h3, h4, h5, h6{
+    color: pink;
+    /*font-family: "Crimson Text", serif;*/
+}
+h5{
+    font-size: 1.4rem;
+    line-height: 1.3;
+    max-width: 600px;
+    letter-spacing: 0.02rem;
+    margin: 1rem 0;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 5rem;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+}
+
+h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.social-fixed{
+    position: fixed;
+    bottom: 0;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    z-index: 1030;
+}
+
+.tools{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 20px;
+}
+
+.sector {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 8%;
+    padding-top: 100px;
+}
+
+section.sector p:first-of-type{
+    margin-bottom: 20px;
+}
+
+p{
+    line-height: 1.55;
+    font-size: 1.2rem;
+}
+
+.box-icon{
+    height: 142px;
+    margin-bottom: 10px;
+    /*position: relative;
+    animation-name: example;
+    animation-duration: 4s;*/
+    overflow: hidden;
+}
+
+.box-icon:hover{
+    -webkit-transform:scale(1.3 );
+    transform:scale(1.3);
+}
+
+
+/*@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+  }*/
+
+section.sector p:first-of-type{
+    margin-top: 20px;
+}
+
+h1{
+    letter-spacing: 0.05rem;
+    font-size: 4rem;
+    padding-top: 75px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+h1 span:first-child{
+    display: inline-block;
+    width: 100%;
+}
+
+h1 img{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.container-flip {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    height: 37px;
+}
+
+.word{
+    color: white;
+}
+
+section, p{
+    margin-bottom: 20px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 10px;
+    margin-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+    
+.div1{ 
+    grid-area: 1 / 1 / 4 / 2;
+    display: flex;
+    align-items: center;
+}
+.div1 img:hover{
+    filter: grayscale(80%);
+}
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 2 / 2 / 3 / 3; }
+.div4 { grid-area: 3 / 2 / 4 / 3; }
+
+h3{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+div.div4 a{
+    color: pink;
+}
+
+div.div4 a:hover{
+    color: rgb(235, 93, 116);
+}
+
+.modalContainer {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modalContainer .modal-content {
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-top: 10px solid pink;
+    width: 60%;
+}
+
+.modalContainer .close {
+    color: #aaaaaa;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 0 0 auto;
+}
+
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.modal-content img{ 
+    align-self: center;
+}
+.modal-content figcaption{
+    text-align: center;
+}
+.modal-content p{
+    padding-top: 25px;
+}
+
+.work{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+    
+.divText{ 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+.divImg{ 
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    align-items: center;
+}
+
+.divModal{
+    margin: 0 auto;
+    padding-top: 100px; 
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+}
+
+
+#btnModal{
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+}
+  
+  @keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+}
+
+.cardWork{
+    transition: all 1.2s ease;
+    -webkit-transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: rgb(56, 56, 63);
+}
+
+.cardWork:hover{
+    transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
+}
+
+
+.projects{
+    margin-top: 60px;
+}
+
+
+.container-work{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-top: 4.2rem;
+}
+
+.container-img{
+    width: 55%;
+    padding-top: 30px;
+}
+
+.container-text{
+    width: 100%;
+    padding-left: 20px;
+}
+
+.container-icons{
+    color: #fff;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.container-btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.repo{
+    transition: all 300ms ease-out;
+}
+
+.repo:hover{
+    transform: translateY(5px);
+}
+
