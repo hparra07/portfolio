@@ -51,4 +51,3 @@ function menuPosition() {
         $('.wrapper').css('margin-top', '0');
     }
 }
- 

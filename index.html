@@ -8,6 +8,7 @@
     <meta name="keywords" content="PORTFOLIO, PORTAFOLIO, DEVELOPER, DESARROLLADOR, PROGRAMADOR, WEB, FRONTEND, SKILLS, WORK.">
     <link rel="stylesheet" href="./css/bootstrap-5.1.3-dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/HP.jpg">
     <title>Howard Parra | Front-End Developer</title>
@@ -19,12 +20,11 @@
                 <a class="navbar-brand" href="#home" aria-label="home">
                     <img src="./img/HP.jpg" alt="logo" height="70" class="d-inline-block align-text-top">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
                     <ol>
-                        <!--<ol class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll">-->
                         <li class="nav-item">
                             <a class="navLink active" aria-current="page" aria-label="home" href="#home">Home</a>
                         </li>
@@ -75,8 +75,8 @@
             </h1>
         </div>
         <section id="about" class="sector">
-            <h2>About me</h2>
-            <h3>Hola, soy Howard!</h3>
+                <h2>About me</h2>
+            <h3>Hi I'm Howard!</h3>
             <div class="about">
                 <div class="div1"> 
                     <img src="./img/me.jpg" alt="this is me" height="450px" width="320px">
@@ -169,7 +169,7 @@
                     <img src="./img/coderhouse-logo.png" alt="coderhouse-logo" height="150">
                 </div>
             </div>
-            <div class="divModal">
+            <div class="divModal wow animate__animated animate__slideInLeft">
                 <h4>Puedes ver más si clickeas en este botón</h4>
                 <button id="btnModal" class="btn btn-secondary">Abrir</button> 
                 <div id="myModal" class="modalContainer">
@@ -213,8 +213,8 @@
                         <img src="./img/emoji-happy.png" alt="">
                     </div>
                     <div class="container-text" style="padding-left: 50px;">
-                        <h5>Simulador JavaScript</h5>
-                        <p>e-Commerce desarrollada con JavaScript, html y css.</p>
+                        <h5>Sporto®</h5>
+                        <p>Simulador de e-Commerce desarrollada con JavaScript, HTML y CSS3 en el que podrás imitar una compra de zapatillas, intentar usar el buscador y pedir una consulta en el formulario de contacto.</p>
                         <div class="container-icons">
                             <h4>Herramientas que usé:</h4>
                             <div>
@@ -304,7 +304,7 @@
         </section>
     </main>
     <footer class="d-flex justify-content-center text-center">
-        <p>© 2022 | Designed & coded with 🤍 by Howard Parra (aka Howi). You can see this repo right <a href="https://github.com/hparra07" target="_blank">here</a></p>
+        <p>© 2022 | Designed & coded with 🤍 by Howard Parra (aka Howi). You can see this repo right <a href="https://github.com/hparra07/portfolio" target="_blank">here</a></p>
     </footer>
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -314,5 +314,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a0d6ad12f7.js" crossorigin="anonymous"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 </html>
