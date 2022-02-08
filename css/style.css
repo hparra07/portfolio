@@ -402,6 +402,9 @@ div.div4 a:hover{
 /*-------------- SMARTPHONES -------------------*/
 
 @media (min-width: 320px) and (max-width: 480px){
+    body{
+        width: 100vh;
+    }
     header{
         width: 100vh;
     }
@@ -431,6 +434,9 @@ div.div4 a:hover{
         display: flex;
         flex-wrap: wrap;
         height: 20%;
+    }
+    .sector{
+        padding-top: 200px;
     }
 }
 
