@@ -126,7 +126,6 @@ footer {
     height: 5rem;
     bottom: 0;
     left: 0;
-    align-items: center;
 }
 
 h2{
@@ -140,6 +139,10 @@ h2{
     margin-left: 20px;
     margin-bottom: 30px;
     z-index: 1030;
+}
+
+.social{
+    display: none;
 }
 
 .tools{
@@ -331,18 +334,6 @@ div.div4 a:hover{
     max-width: 800px;
 }
 
-
-/*#btnModal{
-    position: relative;
-    animation-name: example;
-    animation-duration: 4s;
-}
-  
-  @keyframes example {
-    0%   {left:0px; top:0px;}
-    25%  {left:200px; top:0px;}
-}*/
-
 .cardWork{
     transition: all 1.2s ease;
     -webkit-transition: all 1.2s ease;
@@ -411,7 +402,7 @@ div.div4 a:hover{
 /*-------------- SMARTPHONES -------------------*/
 
 @media (min-width: 320px) and (max-width: 480px){
-    body{
+    header{
         width: 100vh;
     }
     ol{
@@ -422,6 +413,24 @@ div.div4 a:hover{
     }
     .wrapper{
         padding-top: 50px;
+    }
+    .social-fixed{
+        display: none;
+    }
+    .social{
+        display: flex;
+    }
+    .social-list{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding-top: 15px;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        height: 20%;
     }
 }
 
