@@ -25,28 +25,36 @@ blockquote {
 
 /*fin del reset css*/
 
-.body{
+body{
     background-color: rgba(0, 0, 0, 0.856); 
-    height: 100vh;
+    height: 100%;
     margin: auto; 
     font-family: Century Gothic;
+    position: relative;
+    padding-bottom: 300px;
+    min-height: 1100px;
 }
 
-.header{ 
-    text-align:center;
-}
-.menu{ 
-    width:100%; 
-    background-color:rgba(0, 0, 0, 0.9); 
-    color:white; 
+header{ 
     text-align: center;
 }
-.wrapper{  
-    width:100%; 
+
+.menu{ 
+    background-color:rgba(0, 0, 0, 0.9); 
 }
- 
+
+footer {
+    color: white;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
 .fixed{
-    position:fixed; 
+    position: fixed; 
     top: 0;
     right: 0;
     left: 0;
@@ -103,10 +111,6 @@ ol{
     align-items: center;
 }
 
-h1{
-    color: pink;
-}
-
 h2, h3, h4, h5, h6{
     color: pink;
     /*font-family: "Crimson Text", serif;*/
@@ -117,15 +121,6 @@ h5{
     max-width: 600px;
     letter-spacing: 0.02rem;
     margin: 1rem 0;
-}
-
-footer {
-    color: white;
-    background-color: black;
-    width: 100%;
-    height: 5rem;
-    bottom: 0;
-    left: 0;
 }
 
 h2{
@@ -189,6 +184,7 @@ section.sector p:first-of-type{
 }
 
 h1{
+    color: pink;
     letter-spacing: 0.05rem;
     font-size: 4rem;
     padding-top: 75px;
@@ -236,6 +232,9 @@ section, p{
     grid-area: 1 / 1 / 4 / 2;
     display: flex;
     align-items: center;
+}
+.div1 img{
+    border-radius: 6%;
 }
 .div1 img:hover{
     filter: grayscale(80%);
@@ -366,8 +365,10 @@ div.div4 a:hover{
 }
 
 .container-img{
-    width: 55%;
-    padding-top: 30px;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-text{
@@ -397,31 +398,43 @@ div.div4 a:hover{
     transform: translateY(5px);
 }
 
+.loading-lang{
+    opacity: 0;
+  }
+  .loading-lang.show{
+    opacity: 1;
+  }
+
 /*-------------- MEDIAS QUIERIES ---------------*/
 
 /*-------------- SMARTPHONES -------------------*/
 
 @media (min-width: 320px) and (max-width: 480px){
-    body{
-        width: 100vh;
-    }
-    header{
-        width: 100vh;
-    }
     ol{
         display: flex;
         flex-direction: column;
+        list-style: none;
         gap: 0;
         padding-left: 15px;
     }
+    header{
+        width: 100%;
+    }
+    h1{
+        font-size: 2rem;
+        padding-top: 0;
+        margin-top: 0;
+    }
     .wrapper{
         padding-top: 50px;
+        width: 100%;
     }
     .social-fixed{
         display: none;
     }
     .social{
         display: flex;
+        justify-content: center;
     }
     .social-list{
         list-style: none;
@@ -433,15 +446,90 @@ div.div4 a:hover{
     footer{
         display: flex;
         flex-wrap: wrap;
-        height: 20%;
     }
-    .sector{
-        padding-top: 250px;
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        padding: 0;
+        align-items: center;
+    }
+    .tools{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 10px;
+    }
+    .tools p{
+        font-size: medium;
+    }
+    .work{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        padding: 0;
+        align-items: center;
+    }
+    .modal-content img:nth-last-child(2){
+        width: 100%;
+    }
+    .divImg{
+        height: 80px;
+    }
+    .modalContainer{
+        padding-right: 50px;
+    }
+    .container-work{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container-icons{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
 /*-------------- TABLETS & IPADS ----------------*/
 
 @media (min-width: 768px) and (max-width: 990px){
-    
+    header{
+        width: 100%;
+    }
+    h1{
+        padding-top: 0;
+        padding-left: 70px;
+    }
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tools{
+        font-size: 10px;
+    }
+    .work{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .modal-content img:nth-last-child(2){
+        width: 90%;
+    }
+    .social-fixed{
+        display: none;
+    }
+    .social{
+        display: flex;
+        justify-content: center;
+    }
+    .social-list{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding-top: 15px;
+    }
 }
