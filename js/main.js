@@ -1,4 +1,43 @@
 
+//--------------- MENU FIXED TOP -----------
+
+menuPosition();
+ 
+$(window).scroll(function() {    
+    menuPosition();
+});
+ 
+function menuPosition() {
+    var height_header = $('.header').outerHeight(true);
+    var height_menu = $('.menu').outerHeight(true);
+ 
+    if ($(window).scrollTop() >= height_header){
+        $('.menu').addClass('fixed');
+        $('.wrapper').css('margin-top', (height_menu) + 'px');
+    } else {
+        $('.menu').removeClass('fixed');
+        $('.wrapper').css('margin-top', '0');
+    }
+}
+
+
+//------------ CAMBIO DE IDIOMA -------------
+
+let check=document.querySelector('.check');
+
+check.addEventListener('click', language);
+
+function language(){
+    let id = check.checked;
+
+    if (id == true){
+        location.href="es/index.html";
+    }else{
+        location.href="../index.html"
+    }
+}
+
+//------------- MODAL -------------------
 
 if(document.getElementById("btnModal")){
     var modal = document.getElementById("myModal");
@@ -30,24 +69,5 @@ if(document.getElementById("btnModal")){
             body.style.height = "auto";
             body.style.overflow = "visible";
         }
-    }
-}
-
-menuPosition();
- 
-$(window).scroll(function() {    
-    menuPosition();
-});
- 
-function menuPosition() {
-    var height_header = $('.header').outerHeight(true);
-    var height_menu = $('.menu').outerHeight(true);
- 
-    if ($(window).scrollTop() >= height_header){
-        $('.menu').addClass('fixed');
-        $('.wrapper').css('margin-top', (height_menu) + 'px');
-    } else {
-        $('.menu').removeClass('fixed');
-        $('.wrapper').css('margin-top', '0');
     }
 }
