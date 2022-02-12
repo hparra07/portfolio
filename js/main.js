@@ -1,27 +1,5 @@
 
-//--------------- MENU FIXED TOP -----------
-
-menuPosition();
- 
-$(window).scroll(function() {    
-    menuPosition();
-});
- 
-function menuPosition() {
-    var height_header = $('.header').outerHeight(true);
-    var height_menu = $('.menu').outerHeight(true);
- 
-    if ($(window).scrollTop() >= height_header){
-        $('.menu').addClass('fixed');
-        $('.wrapper').css('margin-top', (height_menu) + 'px');
-    } else {
-        $('.menu').removeClass('fixed');
-        $('.wrapper').css('margin-top', '0');
-    }
-}
-
-
-//------------ CAMBIO DE IDIOMA -------------
+/*-----------------LANG MODE------------------------*/
 
 let check=document.querySelector('.check');
 
@@ -37,7 +15,15 @@ function language(){
     }
 }
 
-//------------- MODAL -------------------
+/*-------------LIGHT MODE---------------------------*/
+
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', () =>{
+    document.body.classList.toggle('light');
+})
+
+/*-----------------------MODAL----------------------*/
 
 if(document.getElementById("btnModal")){
     var modal = document.getElementById("myModal");
@@ -69,5 +55,26 @@ if(document.getElementById("btnModal")){
             body.style.height = "auto";
             body.style.overflow = "visible";
         }
+    }
+}
+
+/*------------------MENU FIXED TOP------------------*/
+
+menuPosition();
+ 
+$(window).scroll(function() {    
+    menuPosition();
+});
+ 
+function menuPosition() {
+    var height_header = $('.header').outerHeight(true);
+    var height_menu = $('.menu').outerHeight(true);
+ 
+    if ($(window).scrollTop() >= height_header){
+        $('.menu').addClass('fixed');
+        $('.wrapper').css('margin-top', (height_menu) + 'px');
+    } else {
+        $('.menu').removeClass('fixed');
+        $('.wrapper').css('margin-top', '0');
     }
 }

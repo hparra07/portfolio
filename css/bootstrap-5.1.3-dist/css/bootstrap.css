@@ -3038,12 +3038,12 @@ textarea.form-control-lg {
 }
 
 .btn-secondary {
-  color: #fff;
+  color: black;
   background-color: pink;
   border-color: pink;
 }
 .btn-secondary:hover {
-  color: #fff;
+  color: black;
   background-color: rgb(235, 93, 116);
   border-color: rgb(235, 93, 116);
 }

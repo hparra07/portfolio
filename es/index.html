@@ -22,8 +22,17 @@
                 </a>
                 <div class="lang">
                     <span class="en">Ingles</span>
+                    <label for="checkbox"></label>
                     <input type="checkbox" class="check" checked>
                     <span class="es">Español</span>
+                </div>
+                <div class="mode">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -87,7 +96,7 @@
                     <img src="../img/me.jpg" alt="this is me" height="450px" width="320px">
                 </div>
                 <div class="div2">
-                    <p>Soy graduado en Hotelería y Servicios de la Hospitalidad, si, así como leen, pero llegó el COVID-19 a nuestras vidas. A pesar de los tiempos difíciles a nivel mundial por la pandemia decidí verle el lado positivo y aprovechar el tiempo en casa para aprender sobre rubros que nunca antes conocí y heme aqui, convertido en Front-End Developer.</p>
+                    <p>Soy graduado en Hotelería y Servicios de la Hospitalidad, si, así como leen, pero llegó el COVID-19 a nuestras vidas. A pesar de los tiempos difíciles a nivel mundial por la pandemia decidí verle el lado positivo y aprovechar el tiempo en casa para aprender sobre rubros que nunca antes conocí y heme aqui, convertido en Desarrollador Front-End.</p>
                 </div>
                 <div class="div3">
                     <p>Vivo actualmente en Buenos Aires, Argentina y cuento con conocimientos en HTML5, CSS3, JavaScript, React Js, SASS en los que he ido realizado algunos proyectos que verás más abajo. Cada vez que puedo descubrir métodos nuevos sobre estas herramientas las pongo en práctica ya me hace feliz aprender, crear y explorar para mejorar las cosas.</p>
@@ -175,7 +184,7 @@
                 </div>
             </div>
             <div class="divModal wow animate__animated animate__slideInLeft">
-                <h4>Clickea acá para más información</h4>
+                <h4>Puedes ver más si clickeas en este botón</h4>
                 <button id="btnModal" class="btn btn-secondary">Abrir</button> 
                 <div id="myModal" class="modalContainer">
                     <div class="modal-content">
@@ -194,7 +203,7 @@
                     </div>
                     <div class="container-text">
                         <h5>VIAJAJA</h5>
-                        <p>Es una página web estática (por ahora) que simula ser una agencia de viajes virtual la cual está desarrollada con HTML, CSS3, SASS y Bootstrap y podrás navegar entre las diferentes secciones.</p>
+                        <p>Es una página web estática (por ahora) en el que simula ser una agencia de viajes virtual la cual está desarrollada con HTML, CSS3, SASS y Bootstrap y podrás navegar entre las diferentes secciones.</p>
                         <div class="container-icons">
                             <h4>Herramientas que usé:</h4>
                             <div>
@@ -288,15 +297,15 @@
                 <div class="col">
                     <div class="col-md-12 mt-2">
                         <label for="inputName" class="form-label">Nombre *</label>
-                      <input type="text" name="name" class="form-control" placeholder="Ingresa tu nombre" aria-label="First name" id="inputName" required>
+                      <input type="text" name="name" class="form-control" placeholder="Ingresa tu nombre" aria-label="First name" id="inputName" required maxlength="25">
                     </div>
                     <div class="col-md-12 mt-2">
                         <label for="inputEmail" class="form-label">Email *</label>
-                        <input type="email" name="email" class="form-control" placeholder="Ingresa tu email" id="inputEmail" required>
+                        <input type="email" name="email" class="form-control" placeholder="Ingresa tu email" id="inputEmail" required maxlength="25">
                     </div>
                     <div class="col-md-12 mt-2">
                         <label for="textArea" class="form-label">Comentarioss *</label>
-                        <textarea name="comments" class="form-control" id="textArea" rows="5" cols="" placeholder="Cuéntame sobre tus intereses..." required></textarea>
+                        <textarea name="comments" class="form-control" id="textArea" rows="5" cols="" placeholder="Cuéntame sobre tus intereses..." required maxlength="500"></textarea>
                     </div>
                     <div class="col-12 mt-2">
                         <button type="submit" class="btn btn-secondary">Enviar</button>
@@ -326,7 +335,7 @@
                 </ul>
             </section>
             <section>
-                <p>© 2022 | Diseñado y desarrollado con 🤍 por Howard Parra (aka Howi). Puedes ver este repo <a href="https://github.com/hparra07/portfolio" target="_blank">aquí</a></p>
+                <p>© 2022 | Diseñado y desarrllado con por Howard Parra (aka Howi). Puedes ver este repo <a href="https://github.com/hparra07/portfolio" target="_blank">aquí</a></p>
             </section>
         </div>
     </footer>
