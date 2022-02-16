@@ -359,6 +359,14 @@ div.div4 a:hover{
     align-items: center;
 }
 
+#contact a{
+    color: pink;
+}
+
+#contact a:hover{
+    color: rgb(235, 93, 116);
+}
+
 /*-----------------------FOOTER---------------------*/
 
 footer {
@@ -644,6 +652,9 @@ body.light .modal-content p{
         display: flex;
         flex-wrap: wrap;
     }
+    .container-img img{
+        height: 350px;
+    }
     .lang{
         display: flex;
         flex-direction: row;
@@ -689,6 +700,9 @@ body.light .modal-content p{
         flex-direction: row;
         gap: 10px;
         padding-top: 15px;
+    }
+    .container-img img{
+        height: 350px;
     }
     .lang{
         display: flex;
