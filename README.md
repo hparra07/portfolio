@@ -71,6 +71,4 @@ Para poder aplicar Bootstrap se puede hacer de dos formas:
 
 ### Desarrollo
 
-Desarrollado por [Howard Parra](https://github.com/hparra07) para el curso de Desarrollo Web en [Coderhouse](https://www.coderhouse.com/).
-
-Puedes visitar VIAJAJA en este [link](https://hparra07.github.io/miProyecto/).
+Desarrollado por [Howard Parra](https://github.com/hparra07).
