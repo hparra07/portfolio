@@ -70,6 +70,10 @@ h2{
     margin-bottom: 30px;
 }
 
+#work h3{
+    display: flex;
+}
+
 h3{
     color: pink;
     margin-bottom: 30px;
