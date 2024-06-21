@@ -1,7 +1,7 @@
 
 /*-----------------LANG MODE------------------------*/
 
-let check=document.querySelector('.check');
+/* let check=document.querySelector('.check');
 
 check.addEventListener('click', language);
 
@@ -13,7 +13,7 @@ function language(){
     }else{
         location.href="../index.html"
     }
-}
+} */
 
 /*-------------LIGHT MODE---------------------------*/
 
