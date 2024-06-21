@@ -621,11 +621,16 @@ li{
     color: #f1c40f;
 }
 
+.table{
+    color: #fff;
+}
+
 body.light{
     background-color: #f8edeb; 
 }
 
-body.light p{
+body.light p,
+body.light .table-responsive .table{
     color: black;
 }
 
@@ -676,6 +681,10 @@ body.light #work h3 span a{
 
 body.light #work h3 span a:hover{
     color: rgb(240, 141, 157);
+}
+
+body.light #work h5 a{
+    color: rgb(235, 93, 116);
 }
 
 /*-------------------MEDIAS QUIERIES----------------*/
